@@ -3,18 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-	<script src="main.js"></script>
-	<noscript>Vous devez activer Javascript sur votre navigateur pour activer les fonctionnalit�s du site web</noscript>
 
+</head>
+<body onclick="hide();">
+	<script>
+		function show(tt) {
+			var tag = document.getElementsByTagName(tt)[0];
+
+			tag.style.display = 'inline';
+
+			var t = 0, p = '';
+			for (var i = 2; i < 3; i++) {
+				p = 'pad' + i;
+				if (p != tt) {
+					t = document.getElementsByTagName(p)[0];
+					t.style.display = 'none';
+				}
+
+			}
+
+		}
+		function hide() {
+			var t = 0, p = '';
+			for (var i = 2; i < 3; i++) {
+				p = 'pad' + i;
+				//if(p != tt){
+				t = document.getElementsByTagName(p)[0];
+				t.style.display = 'none';
+				//}
+
+			}
+
+
+		}
+
+
+	</script>
+
+	<noscript>Vous devez activer Javascript sur votre navigateur pour activer les fonctionnalit�s du site web</noscript>
+	<script src="main.js"></script>
 	<script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
-</body>
+
 	<!----UP button-->
 	<div class="up_button" onclick="javascript: window.scroll(0, 0);">
 		UP
@@ -29,7 +63,7 @@
 			<ul class="navmainmenu">
 				<!--<li><a href=""><img height="50px" width="200px" src="Image/menu_arr_blue_tr.png" /></a></li>-->
 				<li><a href=""><img src="Image/accueil.png" /></a></li>
-				<li><a href=""><img src="Image/news.png" /></a></li>
+				<li><a href="" onmouseover="show('pad2');"><img src="Image/news.png" /></a></li>
 			</ul>
 
 		</div>
@@ -45,13 +79,13 @@
 				<br /><br />
 
 				<div style="text-align:center;">
-					<h3><a href="#coding_stats" >Coding stats</a></h3="padding-top:40px;">
+					<h3><a href="#coding_stats">Coding stats</a></h3>
 					<h3><a href="#activity_stats">Activity stats</a></h3>
 					<h3><a href="#experienceskills">Experience</a></h3>
 					<h3><a href="#portfolio">Portfolio</a></h3>
 					<h3><a href="#experience">Job</a></h3>
 					<h3><a href="#formation">Formation</a></h3>
-				
+
 				</div>
 			</div>
 
@@ -101,12 +135,12 @@
 				</p>
 				<p>
 					<br /><br />
-					<h1 style="text-align:center;"id="experience">My Experience</h1>
+					<h1 style="text-align:center;" id="experience">My Experience</h1>
 					<codersrank-work-experience username="regismeyssonnier"
 												logos></codersrank-work-experience>
 
 					<br /><br />
-					<h1 style="text-align:center;"id="formation">My Formation</h1>
+					<h1 style="text-align:center;" id="formation">My Formation</h1>
 					<codersrank-education username="regismeyssonnier"></codersrank-education>
 
 				</p>
@@ -115,6 +149,17 @@
 		</div>
 
 	</div>
+
+	<pad2>
+		<a href="#coding_stats">Coding stats</a>
+		<a href="#activity_stats">Activity stats</a>
+		<a href="#experienceskills">Experience</a>
+		<a href="#portfolio">Portfolio</a>
+		<a href="#experience">Job</a>
+		<a href="#formation">Formation</a>
+
+	</pad2>
+
 
 </body>
 </html>

@@ -238,3 +238,22 @@ codersrank-education {
 	--logo-size: 64px;
 	--tag-bg-color: rgba(255,255,255,0.075);
 }
+
+pad2 {
+	position: absolute;
+	background-color: black;
+	display: none;
+	width: 250px;
+	left: 400px;
+	top: 90px;
+	z-index: 10000;
+	box-shadow: 7px 7px 7px #56C8EE;
+	border: 1px solid #009DCC;
+	padding-left: 00px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+pad2:hover{
+	text-decoration:underline;
+}
