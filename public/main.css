@@ -22,7 +22,7 @@ div.navpage{
 	border-top-right-radius:20px;
 	border-bottom-left-radius:20px;
 	border-bottom-right-radius:20px;
-	height:3600px;
+	height:4000px;
 
 }
 
@@ -105,7 +105,7 @@ div.navleft{
 	
 	float:left;
 	width:25%;
-	height:3525px;
+	height:3925px;
 	background-color:rgba(0, 128, 128, 0.75);
 	border-bottom-left-radius:20px;
 	
@@ -167,7 +167,7 @@ a:active {
 div.navcenter {
 	float: left;
 	width: 75%;
-	height: 3525px;
+	height: 3925px;
 	background-color: black;
 	border-bottom-right-radius: 20px;
 	color: white;
@@ -275,6 +275,25 @@ pad3 {
 }
 
 pad3:hover {
+	text-decoration: underline;
+}
+
+pad4{
+	position: absolute;
+	background-color: black;
+	display: none;
+	width: 250px;
+	left: 600px;
+	top: 90px;
+	z-index: 10000;
+	box-shadow: 7px 7px 7px #56C8EE;
+	border: 1px solid #009DCC;
+	padding-left: 00px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+pad4:hover {
 	text-decoration: underline;
 }
 
