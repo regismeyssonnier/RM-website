@@ -11,7 +11,7 @@ body{
 
 div.navpage{
 
-	width:80%;
+	width:1200px;
 	margin-top:20px;
 	margin-left:auto;
 	margin-right:auto;
@@ -94,7 +94,7 @@ div.navcontent{
 
 	clear:both;
 	height:100%;
-	width:100%;
+	width:1200px;
 	/*border:1px solid gray;*/
 	font-family:Arial;
 	border-bottom-left-radius:2em;
@@ -104,7 +104,7 @@ div.navcontent{
 div.navleft{
 	
 	float:left;
-	width:25%;
+	width:300px;
 	height:3925px;
 	background-color:rgba(0, 128, 128, 0.75);
 	border-bottom-left-radius:20px;
@@ -114,6 +114,19 @@ div.navleft{
 	/*margin-left:10px;*/
 	
 }
+
+div.navcenter {
+	float: left;
+	width: 900px;
+	height: 3925px;
+	background-color: black;
+	border-bottom-right-radius: 20px;
+	color: white;
+	/*background-image:url("Image/rmeysso.png");
+	background-size:100% 100%;
+	/*margin-left:10px;*/
+}
+
 .divelem {
 
 }
@@ -164,17 +177,7 @@ a:active {
 	color: white;
 } 
 
-div.navcenter {
-	float: left;
-	width: 75%;
-	height: 3925px;
-	background-color: black;
-	border-bottom-right-radius: 20px;
-	color: white;
-	/*background-image:url("Image/rmeysso.png");
-	background-size:100% 100%;
-	/*margin-left:10px;*/
-}
+
 
 div.menu_princ_element {
 	width: 100%;
@@ -245,7 +248,7 @@ pad2 {
 	background-color: black;
 	display: none;
 	width: 250px;
-	left: 400px;
+	left:200px;
 	top: 90px;
 	z-index: 10000;
 	box-shadow: 7px 7px 7px #56C8EE;
@@ -264,7 +267,7 @@ pad3 {
 	background-color: black;
 	display: none;
 	width: 250px;
-	left: 780px;
+	left: 580px;
 	top: 90px;
 	z-index: 10000;
 	box-shadow: 7px 7px 7px #56C8EE;
@@ -283,7 +286,7 @@ pad4{
 	background-color: black;
 	display: none;
 	width: 250px;
-	left: 600px;
+	left: 400px;
 	top: 90px;
 	z-index: 10000;
 	box-shadow: 7px 7px 7px #56C8EE;
