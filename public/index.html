@@ -13,7 +13,7 @@
 			tag.style.display = 'inline';
 
 			var t = 0, p = '';
-			for (var i = 2; i < 3; i++) {
+			for (var i = 2; i < 4; i++) {
 				p = 'pad' + i;
 				if (p != tt) {
 					t = document.getElementsByTagName(p)[0];
@@ -25,7 +25,7 @@
 		}
 		function hide() {
 			var t = 0, p = '';
-			for (var i = 2; i < 3; i++) {
+			for (var i = 2; i < 4; i++) {
 				p = 'pad' + i;
 				//if(p != tt){
 				t = document.getElementsByTagName(p)[0];
@@ -62,8 +62,11 @@
 			<!-- MENU -->
 			<ul class="navmainmenu">
 				<!--<li><a href=""><img height="50px" width="200px" src="Image/menu_arr_blue_tr.png" /></a></li>-->
-				<li><a href=""><img src="Image/accueil.png" /></a></li>
+				<li><a href="index.html"><img src="Image/accueil.png" /></a></li>
 				<li><a href="" onmouseover="show('pad2');"><img src="Image/news.png" /></a></li>
+				<li><a href=""><h2>INFO</h2></a></li>
+				<li><a href=""  onmouseover="show('pad3');"><h2>TUTORIAL</h2></a></li>
+				<li style="width:100px;"><a href=""><h2>ABOUT </h2></a></li>
 			</ul>
 
 		</div>
@@ -151,15 +154,19 @@
 	</div>
 
 	<pad2>
-		<a href="#coding_stats">Coding stats</a>
-		<a href="#activity_stats">Activity stats</a>
-		<a href="#experienceskills">Experience</a>
-		<a href="#portfolio">Portfolio</a>
-		<a href="#experience">Job</a>
-		<a href="#formation">Formation</a>
+		<a href="index.html#coding_stats">Coding stats</a>
+		<a href="index.html#activity_stats">Activity stats</a>
+		<a href="index.html#experienceskills">Experience</a>
+		<a href="index.html#portfolio">Portfolio</a>
+		<a href="index.html#experience">Job</a>
+		<a href="index.html#formation">Formation</a>
 
 	</pad2>
 
+	<pad3>
+		<a href="c.html">The Langage C</a>
+
+	</pad3>
 
 </body>
 </html>

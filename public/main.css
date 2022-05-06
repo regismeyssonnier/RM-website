@@ -71,12 +71,12 @@ ul.navmainmenu {
 }
 
 ul.navmainmenu li{
-
+	
 	float:left;
 	width:200px;
 	height:50px;
 	text-align:center;
-	margin-top:20px;
+	margin-top:0px;
 	
 }
 
@@ -137,6 +137,7 @@ a:link {
 	vertical-align: middle;
 	text-decoration: none;
 	display: inline-block;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
 a.mail{
@@ -256,4 +257,66 @@ pad2 {
 
 pad2:hover{
 	text-decoration:underline;
+}
+
+pad3 {
+	position: absolute;
+	background-color: black;
+	display: none;
+	width: 250px;
+	left: 780px;
+	top: 90px;
+	z-index: 10000;
+	box-shadow: 7px 7px 7px #56C8EE;
+	border: 1px solid #009DCC;
+	padding-left: 00px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+pad3:hover {
+	text-decoration: underline;
+}
+
+div.code {
+	background-color: #eee;
+	border-radius: 3px;
+	font-family: courier, monospace;
+	padding: 0 3px;
+	color:black;
+	width:75%;
+	height:350px;
+	margin-left:50px;
+}
+
+tab1{
+	margin-left:20px;
+
+}
+
+tab2 {
+	margin-left: 50px;
+}
+
+tab3 {
+	margin-left: 100px;
+}
+
+tab4 {
+	margin-left: 150px;
+}
+
+keyword_blue{
+	color:blue;
+	font-weight:bold;
+}
+
+keyword_red {
+	color: red;
+	font-weight: bold;
+}
+
+keyword_green {
+	color: green;
+	font-weight: bold;
 }
