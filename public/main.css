@@ -49,6 +49,7 @@ div.navpage{
 	text-align: center;
 	color: white;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	z-index:1000000;
 }
 
 div.navmainmenud {
