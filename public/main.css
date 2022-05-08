@@ -343,3 +343,30 @@ keyword_green {
 	color: green;
 	font-weight: bold;
 }
+
+@keyframes about_anim {
+	from {
+		transform: rotate(0deg);
+		
+	}
+
+	to {
+		transform: rotate(360deg);
+		
+	}
+}
+
+.about_me {
+	transform: rotate(0deg);
+	animation-name: about_anim;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.follow_me {
+	transform: rotate(0deg);
+	animation-name: about_anim;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
