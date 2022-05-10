@@ -19,7 +19,7 @@
 				if (p != tt) {
 					t = document.getElementsByTagName(p)[0];
 					t.style.display = 'none';
-                    
+
 				}
 
 			}
@@ -38,11 +38,7 @@
 
 
 		}
-
-		for (var i = 2; i < 5; i++) {
-            t = document.getElementsByTagName(p)[0];
-            t.style.left = ((window.innerWidth / 2) - 125) + 'px';
-		}
+				
 
 	</script>
 
@@ -70,9 +66,10 @@
 				<!--<li><a href=""><img height="50px" width="200px" src="Image/menu_arr_blue_tr.png" /></a></li>-->
 				<li><a href="index.html"><img src="Image/accueil.png" /></a></li>
 				<li><a href="" onmouseover="show('pad2');"><img src="Image/news.png" /></a></li>
-				<li><a href="info.html"onmouseover="show('pad4');"><h2>INFO</h2></a></li>
-				<li><a href=""  onmouseover="show('pad3');"><h2>TUTORIAL</h2></a></li>
+				<li><a href="info.html" onmouseover="show('pad4');"><h2>INFO</h2></a></li>
+				<li><a href="" onmouseover="show('pad3');"><h2>TUTORIAL</h2></a></li>
 				<li style="width:100px;"><a href="about.html"><h2>ABOUT </h2></a></li>
+				<li><a href="settings.html" style="padding: 20px 5px;"><img src="Image/settings2.png" width="25" height="25" /></a></li>
 			</ul>
 
 		</div>
@@ -81,7 +78,7 @@
 		<div class="navcontent">
 
 			<!-- LEFT -->
-			<div class="navleft">
+			<div class="navleft" id="idnavleft">
 				<div class="menu_princ_element">
 					<h2><a href="#langage_c">Langage C</a></h2>
 				</div>
@@ -98,7 +95,7 @@
 			</div>
 
 			<!-- CENTER -->
-			<div class="navcenter">
+			<div class="navcenter" id="idnavcenter">
 				<center><h1 id="langage_c">The langage C</h1></center><br><br />
 				<h2 id="base" style="text-decoration: underline; margin-left: 20px;">1. Base</h2>
 				<p style="margin-left:20px;">
@@ -233,12 +230,33 @@
 
 	<pad3>
 		<a href="c.html">The Langage C</a>
-		
+
 	</pad3>
 	<pad4>
 		<a href="info.html">My Setup</a>
-		
+
 	</pad4>
+
+	<script>
+        Save_Custom();
+        var custom = localStorage.getItem('custom');
+        console.log('custom ' + custom);
+        if (!custom) {
+            custom = sessionStorage.getItem('custom');
+            if (!custom) custom = "false";
+        }
+
+        if (custom == "false") {
+            Save_Theme();
+            Load_Theme();
+        }
+        else {
+            Save_Custom_Theme();
+            Load_Custom_Theme();
+        }
+
+		
+	</script>
 
 </body>
 </html>

@@ -5,7 +5,8 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
-<body onclick="hide();">
+<body onclick="hide();" >
+	
 	<script>
 		function show(tt) {
 			var tag = document.getElementsByTagName(tt)[0];
@@ -39,19 +40,12 @@
 
 		}
 
-		setInterval(() => {
-			if (Date.now() % 5 == 0) {
-				document.getElementById("blinkp").style.color = "red";
-			}
-			else {
-				document.getElementById("blinkp").style.color = "white";
-			}
-		}, 1000);
+		
 
 	</script>
 
 	<noscript>Vous devez activer Javascript sur votre navigateur pour activer les fonctionnalit�s du site web</noscript>
-	<script src="main.js"></script>
+    <script src="main.js"></script>
 	<script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
@@ -86,51 +80,116 @@
 		<div class="navcontent">
 
 			<!-- LEFT -->
-			<div class="navleft" id="idnavleft">
+			<div id="idnavleft" class="navleft">
 				<div class="menu_princ_element">
-					<h2><a href="#langage_c">SETUP</a></h2>
+					<h2><a href="#follow">Theme</a></h2>
 				</div>
 				<br /><br />
 
 				<div style="text-align:center;">
-					<h3><a href="#base">My PC</a></h3>
-					<h3><a href="#netw">Net Worth</a></h3>
-
+					<h3><a href="#theme">Change Theme</a></h3>
+					<h3><a href="#custom">Custom Theme</a></h3>
 
 				</div>
 			</div>
 
 			<!-- CENTER -->
 			<div class="navcenter" id="idnavcenter">
-				<center><h1 id="langage_c">My Setup</h1></center><br><br />
-				<h2 id="base" style="text-decoration: underline; margin-left: 20px;">1. My PC</h2>
-				<p style="margin-left:20px;">
-					My setup is high level.
-				</p>
+				<center><h1 id="langage_c" class="about_me">Settings</h1></center><br><br />
+				<h2 id="theme" style="text-decoration: underline; margin-left: 20px;">Change theme predefined :</h2>
+				<div class="wrap_settings">
+					<div class="wms_left">
+						Theme
+					</div>
+					<div class="wms_left2">
+						Link
+					</div>
+					<div class="wms_left3">
+						Text color
+					</div>
+					<div class="wms_right">
+						<select name="theme" id="theme-select">
+							<option value="default">--default--</option>
+							<option value="red">red</option>
+							<option value="blue">blue</option>
+							<option value="yellow">yellow</option>
+							<option value="purple">purple</option>
+						</select>
 
+					</div>
+					<div class="wms_rightc3">
+						<select name="theme_center" id="theme-select-center">
+							<option value="default">--default--</option>
+							<option value="red">red</option>
+							<option value="blue">blue</option>
+							<option value="yellow">yellow</option>
 
-				<center><img src="Image/pc.jpg" width="600" height="400" /></center>
-				<p id="blinkp" style="margin-left:20px;font-weight:bold;color:red">
-					<br /><br />
+						</select>
 
-					Main settings:<br /><br /><br />
-					- Brand : Asus ROG G15DK<br /><br />
-					- Processor : AMD Ryzen 7 5800 X 8 core 16 Threads<br /><br />
-					-- Frequency : 4600 Mhz<br /><br />
-					- Graphic card : RTX 3060 Nvidia 12Gb <br /><br />
-					<br /><br /><br />
-					</>
-				</p>
-				<p style="margin-left:20px;">
-					My PC is very beautiful with RGB light.<br /><br />
-					<center><img src="Image/pc2.jpg" width="350" height="500" /></center>
-					<br /><br />
-				</p>
-				<h2 id="netw" style="text-decoration: underline; margin-left: 20px;">2. Net worth</h2>
-				<p style="margin-left:20px;">
-					My PC cost 2500 euros, the screen 300 euros, the second screen 50 euros, and the keyboard 20 euros.<br /><br />
-					The net worth is 2870 euros.
-				</p>
+					</div>
+
+					<div class="wms_right2">
+						<select name="theme_link" id="theme-link-select">
+							<option value="default">--default--</option>
+							<option value="red">red</option>
+							<option value="blue">blue</option>
+							<option value="yellow">yellow</option>
+
+						</select>
+					</div>
+					<div class="wms_right3">
+						<select name="theme_text" id="theme-text-select">
+							<option value="default">--default--</option>
+							<option value="red">red</option>
+							<option value="black">black</option>
+							<option value="white">white</option>
+
+						</select>
+					</div>
+					<div class="wms_right4">
+						<input type="button" id="save_button" value="Save" style="width:150px;" onclick="Change_Theme();window.location.reload();" />
+					</div>
+
+				</div>
+
+				<h2 id="custom" style="text-decoration: underline; margin-left: 20px;">Custom theme :</h2>
+				<div class="wrap_settings">
+					<div class="wms_left">
+						Theme
+					</div>
+					<div class="wms_left2">
+						Link
+					</div>
+					<div class="wms_left3">
+						Text color
+					</div>
+					<div class="wms_right">
+						<input type="color" id="custom-theme" name="headc"
+							   value="#e66465">
+						<label for="head">Left</label>
+					</div>
+					<div class="wms_rightc3">
+						<input type="color" id="custom-theme-center" name="headcc"
+							   value="#e66465">
+						<label for="head">Center</label>
+
+					</div>
+
+					<div class="wms_right2">
+						<input type="color" id="custom-link" name="headcl"
+							   value="#ffffff">
+						
+					</div>
+					<div class="wms_right3">
+						<input type="color" id="custom-text" name="headct"
+								value="#e66465">
+						
+					</div>
+					<div class="wms_right4">
+						<input type="button" id="save_button" value="Save" style="width:150px;" onclick="Change_Custom_Theme();" />
+					</div>
+
+				</div>
 
 			</div>
 		</div>
@@ -157,24 +216,22 @@
 	</pad4>
 
 	<script>
-        Save_Custom();
+		Save_Custom();
         var custom = localStorage.getItem('custom');
         console.log('custom ' + custom);
-        if (!custom) {
+		if (!custom) {
             custom = sessionStorage.getItem('custom');
             if (!custom) custom = "false";
-        }
-
-        if (custom == "false") {
-            Save_Theme();
-            Load_Theme();
-        }
-        else {
+		}
+		
+		if (custom == "false") {
+			Save_Theme();
+			Load_Theme();
+		}
+		else {
             Save_Custom_Theme();
             Load_Custom_Theme();
         }
-
-		
 
 	</script>
 
