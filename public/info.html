@@ -157,26 +157,27 @@
 	</pad4>
 
 	<script>
-        Save_Custom();
-        var custom = localStorage.getItem('custom');
-        console.log('custom ' + custom);
-        if (!custom) {
-            custom = sessionStorage.getItem('custom');
-            if (!custom) custom = "false";
-        }
+		Save_Custom();
+		var custom = localStorage.getItem('custom');
+		console.log('custom ' + custom);
+		if (!custom) {
+			custom = sessionStorage.getItem('custom');
+			if (!custom) custom = "false";
+		}
 
-        if (custom == "false") {
-            Save_Theme();
-            Load_Theme();
-        }
-        else {
-            Save_Custom_Theme();
-            Load_Custom_Theme();
-        }
+		if (custom == "false") {
+			Save_Theme();
+			Load_Theme();
+		}
+		else {
+			Save_Custom_Theme();
+			Load_Custom_Theme();
+		}
 
-		
+
 
 	</script>
-
+	<audio src="Son/son.mp3" autoplay loop>
+	</audio>
 </body>
 </html>

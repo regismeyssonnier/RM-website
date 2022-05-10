@@ -5,8 +5,8 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
-<body onclick="hide();" >
-	
+<body onclick="hide();">
+
 	<script>
 		function show(tt) {
 			var tag = document.getElementsByTagName(tt)[0];
@@ -40,12 +40,12 @@
 
 		}
 
-		
+
 
 	</script>
 
 	<noscript>Vous devez activer Javascript sur votre navigateur pour activer les fonctionnalit�s du site web</noscript>
-    <script src="main.js"></script>
+	<script src="main.js"></script>
 	<script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
@@ -178,12 +178,12 @@
 					<div class="wms_right2">
 						<input type="color" id="custom-link" name="headcl"
 							   value="#ffffff">
-						
+
 					</div>
 					<div class="wms_right3">
 						<input type="color" id="custom-text" name="headct"
-								value="#e66465">
-						
+							   value="#e66465">
+
 					</div>
 					<div class="wms_right4">
 						<input type="button" id="save_button" value="Save" style="width:150px;" onclick="Change_Custom_Theme();" />
@@ -217,23 +217,24 @@
 
 	<script>
 		Save_Custom();
-        var custom = localStorage.getItem('custom');
-        console.log('custom ' + custom);
+		var custom = localStorage.getItem('custom');
+		console.log('custom ' + custom);
 		if (!custom) {
-            custom = sessionStorage.getItem('custom');
-            if (!custom) custom = "false";
+			custom = sessionStorage.getItem('custom');
+			if (!custom) custom = "false";
 		}
-		
+
 		if (custom == "false") {
 			Save_Theme();
 			Load_Theme();
 		}
 		else {
-            Save_Custom_Theme();
-            Load_Custom_Theme();
-        }
+			Save_Custom_Theme();
+			Load_Custom_Theme();
+		}
 
 	</script>
-
+	<audio src="Son/son.mp3" autoplay loop>
+	</audio>
 </body>
 </html>
