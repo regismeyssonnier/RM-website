@@ -380,3 +380,68 @@ function Save_Custom(){
 
     localStorage.setItem('custom', sessionStorage.getItem('custom'));
 }
+
+
+function IMG_ZOOM(id) {
+    
+    $(id).addEventListener("mousemove", () => {
+        let x = event.clientX; 
+        let y = event.clientY;
+        //window.innerWidth
+        //alert($(id).style.left);
+        
+        var m = (window.innerWidth / 2)+250;
+        var r = (x - m) / 2;
+        var l = (m - x) / 2;
+        var m2 = (window.innerHeight / 2) + 0;
+        var b = (y - m2) / 2;
+        var u = (m2 - y) / 2;
+        var ty = 'translateY(';
+        if (y < m) {
+            ty += u + 'px)';
+        }
+        else {
+            ty += b + 'px)';
+        }
+        if (x > m) {
+            $(id).style.transform = 'scale(3.0) translateX(-' + r +  'px)' + ty;
+        }
+        else {
+            $(id).style.transform = 'scale(3.0) translateX(' + l + 'px)'  + ty;
+        }
+        //console.log(x - m);
+    });
+
+    $(id).addEventListener("mouseout", () => {
+        $(id).style.transform = 'scale(1.0)';
+        //$(id).style.width = "600px";
+        //$(id).style.height = "400px";
+
+    });
+
+}
+
+var gallery = [];
+gallery.push(['head2.png', 300, 400, 'My Photo']);
+gallery.push(['pc.jpg', 600, 400, 'My high end PC']);
+gallery.push(['pc2.jpg', 350, 550, 'My PC']);
+let I = 0;
+
+function NEXT() {
+    I++;
+    I = I % gallery.length;
+    $('imggal').src = 'Image/'+gallery[I][0];
+    $('imggal').style.width = gallery[I][1] + 'px';
+    $('imggal').style.height = gallery[I][2] + 'px';
+    $('text_img').innerHTML = gallery[I][3];
+}
+
+function PREV() {
+    I--;
+    I = (I == -1) ? gallery.length-1 : I;
+    $('imggal').src = 'Image/' +gallery[I][0];
+    $('imggal').style.width = gallery[I][1] + 'px';
+    $('imggal').style.height = gallery[I][2] + 'px';
+    $('text_img').innerHTML = gallery[I][3];
+}
+
