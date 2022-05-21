@@ -81,6 +81,8 @@ ul.navmainmenu li{
 	
 }
 
+
+
 a.menu_accueil{
 
 	height:50px;
@@ -257,9 +259,12 @@ a:hover {
 /* selected link */
 a:active {
 	color: white;
-} 
+}
 
+ul.navmainmenu li a {
+	padding-top:5px;
 
+}
 
 div.menu_princ_element {
 	width: 100%;
