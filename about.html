@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body onclick="hide();">
+	<script>
+		function show(tt) {
+			var tag = document.getElementsByTagName(tt)[0];
+
+			tag.style.display = 'inline';
+			tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'pad' + i;
+				if (p != tt) {
+					t = document.getElementsByTagName(p)[0];
+					t.style.display = 'none';
+
+				}
+
+			}
+
+		}
+		function hide() {
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'pad' + i;
+				//if(p != tt){
+				t = document.getElementsByTagName(p)[0];
+				t.style.display = 'none';
+				//}
+
+			}
+
+
+		}
+
+
+
+	</script>
+
+	<noscript>Vous devez activer Javascript sur votre navigateur pour activer les fonctionnalit�s du site web</noscript>
+	<script src="main.js"></script>
+	<script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
+
+	<!----UP button-->
+	<div class="up_button" onclick="javascript: window.scroll(0, 0);">
+		UP
+	</div>
+	<!-- MAIN DIV -->
+	<div class="navpage" id="navpage">
+
+		<!-- NAVIGATION BAR -->
+		<div class="navmainmenud">
+
+			<!-- MENU -->
+			<ul class="navmainmenu">
+				<!--<li><a href=""><img height="50px" width="200px" src="Image/menu_arr_blue_tr.png" /></a></li>-->
+				<li><a href="index.html"><h2>ACCUEIL</h2></a></li>
+				<li><a href="" onmouseover="show('pad2');"><h2>NEWS</h2></a></li>
+				<li><a href="info.html" onmouseover="show('pad4');"><h2>INFO</h2></a></li>
+				<li><a href="" onmouseover="show('pad3');"><h2>TUTORIAL</h2></a></li>
+				<li style="width:150px;"><a href="gallery.html"><h2>GALLERY</h2></a></li>
+				<li style="width:150px;"><a href="about.html"><h2>ABOUT </h2></a></li>
+				<li style="width:20px;"><a href="settings.html" style="padding: 20px 5px;"><img src="Image/settings2.png" width="25" height="25" /></a></li>
+			</ul>
+
+		</div>
+
+		<!-- CONTENT -->
+		<div class="navcontent">
+
+			<!-- LEFT -->
+			<div class="navleft" id="idnavleft">
+				<div class="menu_princ_element">
+					<h2><a href="#follow">FOLLOW ME</a></h2>
+				</div>
+				<br /><br />
+
+				<div style="text-align:center;">
+					<h3><a href="#follow">Follow</a></h3>
+
+
+				</div>
+			</div>
+
+			<!-- CENTER -->
+			<div class="navcenter" id="idnavcenter">
+				<center><h1 id="langage_c" class="about_me">About me</h1></center><br><br />
+				<h2 id="follow" style="text-decoration: underline; margin-left: 20px;">1. Follow me</h2>
+				<p style="margin-left:20px;">
+					Follow me on social network : <br /><br /><br />
+
+					Github <a href="https://github.com/regismeyssonnier">https://github.com/regismeyssonnier</a><br />
+					Linkedin <a href="https://www.linkedin.com/in/r%C3%A9gis-meyssonnier-2938b7222/">https://www.linkedin.com/in/r%C3%A9gis-meyssonnier-2938b7222/</a><br />
+					Codersrank <a href="https://profile.codersrank.io/user/regismeyssonnier">https://profile.codersrank.io/user/regismeyssonnier</a><br />
+					Hackerrank <a href="https://www.hackerrank.com/regis_meyssonni1">https://www.hackerrank.com/regis_meyssonni1</a><br />
+					Coding game <a href="https://www.codingame.com/profile/501450f6e9795e1c991daa922b5f37ff2387984">https://www.codingame.com/profile/501450f6e9795e1c991daa922b5f37ff2387984</a><br />
+					
+				</p>
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<pad2>
+		<a href="index.html#coding_stats">Coding stats</a>
+		<a href="index.html#activity_stats">Activity stats</a>
+		<a href="index.html#experienceskills">Experience</a>
+		<a href="index.html#portfolio">Portfolio</a>
+		<a href="index.html#experience">Job</a>
+		<a href="index.html#formation">Formation</a>
+
+	</pad2>
+
+	<pad3>
+		<a href="c.html">The Langage C</a>
+
+	</pad3>
+
+	<pad4>
+		<a href="info.html">My Setup</a>
+
+	</pad4>
+
+	<script>
+		Save_Custom();
+		var custom = localStorage.getItem('custom');
+		console.log('custom ' + custom);
+		if (!custom) {
+			custom = sessionStorage.getItem('custom');
+			if (!custom) custom = "false";
+		}
+
+		if (custom == "false") {
+			Save_Theme();
+			Load_Theme();
+		}
+		else {
+			Save_Custom_Theme();
+			Load_Custom_Theme();
+		}
+
+
+	</script>
+	<audio src="Son/son.mp3" autoplay loop>
+	</audio>
+
+</body>
+</html>
