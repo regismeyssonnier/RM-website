@@ -60,6 +60,7 @@ div.navmainmenud {
 	border: 1px solid lightblue;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	z-index:10000000;
 }
 
 ul.navmainmenu {
@@ -74,7 +75,7 @@ ul.navmainmenu {
 ul.navmainmenu li{
 	
 	float:left;
-	width:200px;
+	/*width:200px;*/
 	height:50px;
 	text-align:center;
 	margin-top:0px;
@@ -93,6 +94,8 @@ a.menu_accueil{
 
 
 
+
+
 div.navcontent{
 
 	clear:both;
@@ -101,6 +104,7 @@ div.navcontent{
 	/*border:1px solid gray;*/
 	font-family:Arial;
 	border-bottom-left-radius:2em;
+	z-index:5000;
 }
 
 
@@ -551,4 +555,68 @@ keyword_green {
 	color: white;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	z-index: 1000000;
+}
+
+.submenu_main_ulp2 {
+	position: relative;
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1000000;
+	box-shadow: 7px 7px 7px #56C8EE;
+	border: 1px solid #009DCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	width: 250px;
+	height: 300px;
+	background-color: black;
+}
+
+.submenu_main_lip2 {
+	background-color: black;
+	height: 50px;
+	width: 250px;
+}
+
+.submenu_main_ulp3 {
+	position: relative;
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1000000;
+	box-shadow: 7px 7px 7px #56C8EE;
+	border: 1px solid #009DCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	width: 250px;
+	height: 100px;
+}
+
+.submenu_main_lip3 {
+	background-color: black;
+	height: 50px;
+	width: 250px;
+}
+
+.submenu_main_ulp4 {
+	position: relative;
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1000000;
+	box-shadow: 7px 7px 7px #56C8EE;
+	border: 1px solid #009DCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	width: 250px;
+	height: 50px;
+}
+
+.submenu_main_lip4 {
+	background-color: black;
+	height: 50px;
+	width: 250px;
 }

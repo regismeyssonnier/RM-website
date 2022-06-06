@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="main.css">
+	<title>regismeyssonnier</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 <body onclick="hide();">
 	<script>
-		function show(tt) {
+		/*function show(tt) {
 			var tag = document.getElementsByTagName(tt)[0];
 
 			tag.style.display = 'inline';
@@ -37,7 +38,39 @@
 			}
 
 
-		}
+		}*/
+
+        function show(tt) {
+            var tag = document.getElementById(tt);
+
+            tag.style.display = 'block';
+            //tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+
+            var t = 0, p = '';
+            for (var i = 2; i < 5; i++) {
+                p = 'idsubmenu_main_ulp' + i;
+                if (p != tt) {
+                    t = document.getElementById(p);
+                    t.style.display = 'none';
+
+                }
+
+            }
+
+        }
+        function hide() {
+            var t = 0, p = '';
+            for (var i = 2; i < 5; i++) {
+                p = 'idsubmenu_main_ulp' + i;
+                //if(p != tt){
+                t = document.getElementById(p);
+                t.style.display = 'none';
+                //}
+
+            }
+
+
+        }
 
 
 	</script>
@@ -64,11 +97,46 @@
 			<!-- MENU -->
 			<ul class="navmainmenu">
 				<!--<li><a href=""><img height="50px" width="200px" src="Image/menu_arr_blue_tr.png" /></a></li>-->
-				<li><a href="index.html"><h2>ACCUEIL</h2></a></li>
-				<li><a href="" onmouseover="show('pad2');"><h2>NEWS</h2></a></li>
-				<li><a href="info.html" onmouseover="show('pad4');"><h2>INFO</h2></a></li>
-				<li><a href="" onmouseover="show('pad3');"><h2>TUTORIAL</h2></a></li>
-				<li style="width:150px;"><a href="gallery.html"><h2>GALLERY</h2></a></li>
+				<li style="width:200px;"><a href="index.html"><h2>ACCUEIL</h2></a></li>
+				<li style="width:200px;">
+					<a href="" onmouseover="show('idsubmenu_main_ulp2');"><h2>NEWS</h2></a>
+
+					<ul class="submenu_main_ulp2" id="idsubmenu_main_ulp2">
+						<li class="submenu_main_lip2"><a href="index.html#coding_stats">Coding stats</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#activity_stats">Activity stats</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#experienceskills">Experience</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#portfolio">Portfolio</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#experience">Job</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#formation">Formation</a></li>
+
+					</ul>
+
+				</li>
+				<li style="width:200px;">
+					<a href="info.html" onmouseover="show('idsubmenu_main_ulp4');"><h2>INFO</h2></a>
+					<ul class="submenu_main_ulp4" id="idsubmenu_main_ulp4">
+						<li class="submenu_main_lip4"><a href="info.html">My Setup</a></li>
+
+					</ul>
+
+
+
+				</li>
+				<li style="width:200px;">
+					<a href="" onmouseover="show('idsubmenu_main_ulp3');"><h2>TUTORIAL</h2></a>
+					<ul class="submenu_main_ulp3" id="idsubmenu_main_ulp3">
+						<li class="submenu_main_lip3"><a href="c.html">The Langage C</a></li>
+						<li class="submenu_main_lip3"><a href="cpp.html">Data structure in C++</a></li>
+
+					</ul>
+
+
+				</li>
+				<li style="width:150px;">
+					<a href="gallery.html"><h2>GALLERY</h2></a>
+
+
+				</li>
 				<li style="width:150px;"><a href="about.html"><h2>ABOUT </h2></a></li>
 				<li style="width:20px;"><a href="settings.html" style="padding: 20px 5px;"><img src="Image/settings2.png" width="25" height="25" /></a></li>
 			</ul>
