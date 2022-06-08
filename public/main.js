@@ -423,6 +423,7 @@ function IMG_ZOOM(id) {
 
 var gallery = [];
 gallery.push(['head2.png', 300, 400, 'My Photo']);
+gallery.push(['me08062022.jpg', 400, 578, 'My Photo']);
 gallery.push(['pc.jpg', 600, 400, 'My high end PC']);
 gallery.push(['pc2.jpg', 350, 550, 'My PC']);
 let I = 0;
