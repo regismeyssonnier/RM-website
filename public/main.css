@@ -583,6 +583,7 @@ keyword_green {
 }
 
 .submenu_main_ulp3 {
+	background-color: black;
 	position: relative;
 	display: none;
 	list-style-type: none;
@@ -599,7 +600,7 @@ keyword_green {
 
 .submenu_main_lip3 {
 	background-color: black;
-	height: 50px;
+	height: 57px;
 	width: 250px;
 }
 
