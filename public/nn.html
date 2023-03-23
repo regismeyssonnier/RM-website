@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>regismeyssonnier</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body onclick="hide();">
+	<script>
+		/*function show(tt) {
+			var tag = document.getElementsByTagName(tt)[0];
+
+			tag.style.display = 'inline';
+			tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'pad' + i;
+				if (p != tt) {
+					t = document.getElementsByTagName(p)[0];
+					t.style.display = 'none';
+
+				}
+
+			}
+
+		}
+		function hide() {
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'pad' + i;
+				//if(p != tt){
+				t = document.getElementsByTagName(p)[0];
+				t.style.display = 'none';
+				//}
+
+			}
+
+
+		}*/
+
+        function show(tt) {
+            var tag = document.getElementById(tt);
+
+            tag.style.display = 'block';
+            //tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+
+            var t = 0, p = '';
+            for (var i = 2; i < 5; i++) {
+                p = 'idsubmenu_main_ulp' + i;
+                if (p != tt) {
+                    t = document.getElementById(p);
+                    t.style.display = 'none';
+
+                }
+
+            }
+
+        }
+        function hide() {
+            var t = 0, p = '';
+            for (var i = 2; i < 5; i++) {
+                p = 'idsubmenu_main_ulp' + i;
+                //if(p != tt){
+                t = document.getElementById(p);
+                t.style.display = 'none';
+                //}
+
+            }
+
+
+        }
+
+
+	</script>
+
+	<noscript>Vous devez activer Javascript sur votre navigateur pour activer les fonctionnalit�s du site web</noscript>
+	<script src="main.js"></script>
+	
+	<!--UP button-->
+	<div class="up_button" onclick="javascript: window.scroll(0, 0);">
+		UP
+	</div>
+	<!-- MAIN DIV -->
+	<div class="navpage" id="navpage">
+
+		<!-- NAVIGATION BAR -->
+		<div class="navmainmenud">
+
+			<!-- MENU -->
+			<ul class="navmainmenu">
+				<!--<li><a href=""><img height="50px" width="200px" src="Image/menu_arr_blue_tr.png" /></a></li>-->
+				<li style="width:200px;"><a href="index.html"><h2>ACCUEIL</h2></a></li>
+				<li style="width:200px;">
+					<a href="" onmouseover="show('idsubmenu_main_ulp2');"><h2>NEWS</h2></a>
+
+					<ul class="submenu_main_ulp2" id="idsubmenu_main_ulp2">
+						<li class="submenu_main_lip2"><a href="index.html#coding_stats">Coding stats</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#activity_stats">Activity stats</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#experienceskills">Experience</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#portfolio">Portfolio</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#experience">Job</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#formation">Formation</a></li>
+
+					</ul>
+
+				</li>
+				<li style="width:200px;">
+					<a href="info.html" onmouseover="show('idsubmenu_main_ulp4');"><h2>INFO</h2></a>
+					<ul class="submenu_main_ulp4" id="idsubmenu_main_ulp4">
+						<li class="submenu_main_lip4"><a href="info.html">My Setup</a></li>
+
+					</ul>
+
+
+
+				</li>
+				<li style="width:200px;">
+					<a href="" onmouseover="show('idsubmenu_main_ulp3');"><h2>TUTORIAL</h2></a>
+					<ul class="submenu_main_ulp3" id="idsubmenu_main_ulp3">
+						<li class="submenu_main_lip3"><a href="c.html">The Langage C</a></li>
+						<li class="submenu_main_lip3"><a href="cpp.html">Data structure in C++</a></li>
+						<li class="submenu_main_lip3"><a href="nn.html">Convolutional Neural Network</a></li>
+					</ul>
+
+
+				</li>
+				<li style="width:150px;">
+					<a href="gallery.html"><h2>GALLERY</h2></a>
+
+
+				</li>
+				<li style="width:150px;"><a href="about.html"><h2>ABOUT </h2></a></li>
+				<li style="width:20px;"><a href="settings.html" style="padding: 20px 5px;"><img src="Image/settings2.png" alt="settings" width="25" height="25" /></a></li>
+			</ul>
+
+		</div>
+
+		<!-- CONTENT -->
+		<div class="navcontent">
+
+			<!-- LEFT -->
+			<div class="navleft" id="idnavleft">
+				<div class="menu_princ_element">
+					<h2><a href="#langage_c">Neural Network</a></h2>
+				</div>
+				<br /><br />
+
+				<div style="text-align:center;">
+					<h3><a href="#base">The base</a></h3>
+					<h3><a href="#std">Initialization</a></h3>
+					<h3><a href="#memory">Creation</a></h3>
+					<h3><a href="#function">Use the CNN</a></h3>
+					<h3><a href="#c">The project</a></h3>
+
+				</div>
+			</div>
+
+			<!-- CENTER -->
+			<div class="navcenter" id="idnavcenter">
+				<center><h1 id="langage_c">Convolutional Neural Network</h1></center><br><br />
+				<h2 id="base" style="text-decoration: underline; margin-left: 20px;">1. Base</h2>
+				<p style="margin-left:20px;">
+					I'm going to present you how to create a convolutional neural network, who recognize you with my class in python.<br />
+					You can retrieve this code on github :<br /><br />
+					<a href="https://github.com/regismeyssonnier/NeuralNetwork/tree/main/MyCamNetwork">https://github.com/regismeyssonnier/NeuralNetwork/tree/main/MyCamNetwork</a>
+					First, you have to make some import in your code:
+				</p>
+				<p>
+					<div class="code">
+						<keyword_blue>import</keyword_blue> cv2<br />
+						<keyword_blue>import</keyword_blue> sys<br />
+						<keyword_blue>import</keyword_blue> numpy as np<br />
+						<br />
+						<keyword_green># TensorFlow and tf.keras</keyword_green><br />
+						<keyword_blue>import</keyword_blue> tensorflow as tf<br />
+						<br />
+						<keyword_green># Helper libraries</keyword_green><br />
+						<keyword_blue>import</keyword_blue> matplotlib.pyplot as plt<br />
+						<br />
+						print(tf.__version__)<br />
+						<br />
+						<keyword_blue>import</keyword_blue> os<br />
+						<keyword_blue>import</keyword_blue> PIL<br />
+						<keyword_blue>import</keyword_blue> PIL.Image<br />
+						<keyword_blue>import</keyword_blue> pathlib<br />
+						<keyword_blue>import</keyword_blue> matplotlib.pyplot as plt<br />
+
+						
+
+					</div>
+					<br /><br /><br />
+				</p>
+				<p style="margin-left:20px;">
+
+					This import can allow you to import the useful library to create this CNN.
+					<br /><br /><br />
+
+				</p>
+				<h2 id="std" style="text-decoration: underline; margin-left: 20px;">2. Initialization </h2>
+				<p style="margin-left:20px;">
+					You have to use my class MyNetwork.<br /><br />
+
+				</p>
+				<p>
+					<div class="code" style="height:550px;">
+						<keyword_blue>class</keyword_blue> MyNetwork:<br />
+						<br />
+						<keyword_blue>def</keyword_blue> __init__(self, class_name, imw, imh, dataset_url):<br /><br />
+						<div class="div_tab1">
+							self.classname = class_name<br />
+							self.w = imw<br />
+							self.h = imh<br />
+							self.dataset_url = dataset_url<br />
+							self.model = 0<br />
+						</div>
+							<br />
+						<keyword_blue>def</keyword_blue> init_model(self, bsz, valid_sp):<br />
+						<div class="div_tab1">
+							self.batch_size = bsz<br />
+							self.validation_rate = valid_sp<br />
+							<br />
+							self.train_ds = tf.keras.utils.image_dataset_from_directory(<br />
+							pathlib.Path(self.dataset_url),<br />
+							validation_split=self.validation_rate,<br />
+							subset="training",<br />
+							seed=123,<br />
+							image_size=(self.h, self.w),<br />
+							batch_size=self.batch_size)<br /><br />
+
+							self.val_ds = tf.keras.utils.image_dataset_from_directory(<br />
+							pathlib.Path(self.dataset_url),<br />
+							validation_split=self.validation_rate,<br />
+							subset="validation",<br />
+							seed=123,<br />
+							image_size=(self.h, self.w),<br />
+							batch_size=self.batch_size)<br />
+						</div>
+						
+							
+				</div><br /><br /><br />
+				</p>
+				<p style="margin-left:20px;">
+					The method __init__(...) is the constructor of the class, and the method init_model() initialize the data useful for creating the
+					CNN like the training and validation data.
+				</p>
+				<h2 id="memory" style="text-decoration: underline; margin-left: 20px;">3. Creation </h2>
+				<p style="margin-left:20px;">
+					After that, you have to create the CNN with the function create_model().
+					<div class="code">
+					<keyword_blue>def</keyword_blue> create_model(self):<br /><br />
+					<div class="div_tab1">
+						self.model = tf.keras.Sequential([<br />
+						tf.keras.layers.Rescaling(1./255),<br />
+						tf.keras.layers.Conv2D(32, 3, activation='relu'),<br />
+						tf.keras.layers.MaxPooling2D(),<br />
+						tf.keras.layers.Conv2D(32, 3, activation='relu'),<br />
+						tf.keras.layers.MaxPooling2D(),<br />
+						tf.keras.layers.Conv2D(32, 3, activation='relu'),<br />
+						tf.keras.layers.MaxPooling2D(),<br />
+						tf.keras.layers.Flatten(),<br />
+						tf.keras.layers.Dense(256, activation='relu'),<br />
+						tf.keras.layers.Dense(2)<br />
+						])<br /><br />
+
+						self.model.compile(<br />
+						optimizer='adam',<br />
+						loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),<br />
+						metrics=['accuracy'])<br />
+					</div>
+					</div><br /><br /><br />
+
+				</p>
+				<p style="margin-left:20px;">
+					After initializing the model(CNN), you create the model like that. There is some convolution and pooling operation on the image before
+					enter the layers of the CNN. For more info, go to the tensorflow documentation
+				</p><br />
+				<h2 id="function" style="text-decoration: underline; margin-left: 20px;">4. Use the CNN</h2>
+				<p style="margin-left:20px;">
+					This is the total code to use the class MyNetwork in order to create the CNN and save it in some files.
+
+				</p>
+				<p>
+					<div class="code" style="height:200px;">
+					
+						<keyword_green># To create and save the CNN</keyword_green><br />
+						mynet = MyNetwork("regis", 180, 180, "image/copy")<br />
+						mynet.init_model(25, 0.2)<br />
+						mynet.create_model()<br />
+						mynet.train_model(10)<br />
+						mynet.get_history()<br />
+						mynet.save_model("model/regismodel")<br /><br />
+						<keyword_green># To load the model and predict if it's you on the image.</keyword_green><br />
+						mynet.load_model("model/regismodel")<br />
+						mynet.predict("image/test.png")<br />
+
+					</div><br /><br /><br />
+
+				</p>
+				<p style="margin-left:20px;">
+					This piece of code like you see, create an object MyNetwork, initialize, create, train the model. After that, we get and show some
+					information about the history of the accuracy and loss of the model.
+					Then, we save the model.
+				</p>
+				<h2 id="c" style="text-decoration: underline; margin-left: 20px;">5. The project</h2>
+				<p style="margin-left:20px;">
+					Finally, the class MyNetwork is a part of the project MyCamNetwork. This is a project which use the webcam to detect you, your face with other class, and 
+					play some games. This project is accessible via the link give at the beginning of this article.<br /><br />
+					To use the total project, run the command python3 mycam.py on you pc.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	
+	<script>
+		Save_Custom();
+		var custom = localStorage.getItem('custom');
+		console.log('custom ' + custom);
+		if (!custom) {
+			custom = sessionStorage.getItem('custom');
+			if (!custom) custom = "false";
+		}
+
+		if (custom == "false") {
+			Save_Theme();
+			Load_Theme();
+		}
+		else {
+			Save_Custom_Theme();
+			Load_Custom_Theme();
+		}
+
+
+	</script>
+	<audio src="Son/son.mp3" autoplay loop>
+	</audio>
+</body>
+</html>

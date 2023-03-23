@@ -402,6 +402,9 @@ div.code {
 	margin-left:50px;
 }
 
+.div_tab1 {
+	margin-left: 20px;
+}
 tab1{
 	margin-left:20px;
 
@@ -591,7 +594,7 @@ keyword_green {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	width: 250px;
-	height: 100px;
+	height: 170px;
 }
 
 .submenu_main_lip3 {
