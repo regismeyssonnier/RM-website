@@ -43,34 +43,34 @@
 		function show(tt) {
 			var tag = document.getElementById(tt);
 
-            tag.style.display = 'block';
-            //tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+			tag.style.display = 'block';
+			//tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
 
-            var t = 0, p = '';
-            for (var i = 2; i < 5; i++) {
-                p = 'idsubmenu_main_ulp' + i;
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'idsubmenu_main_ulp' + i;
 				if (p != tt) {
 					t = document.getElementById(p);
-                    t.style.display = 'none';
+					t.style.display = 'none';
 
-                }
+				}
 
-            }
+			}
 
-        }
-        function hide() {
-            var t = 0, p = '';
-            for (var i = 2; i < 5; i++) {
-                p = 'idsubmenu_main_ulp' + i;
-                //if(p != tt){
-                t = document.getElementById(p);
-                t.style.display = 'none';
-                //}
+		}
+		function hide() {
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'idsubmenu_main_ulp' + i;
+				//if(p != tt){
+				t = document.getElementById(p);
+				t.style.display = 'none';
+				//}
 
-            }
+			}
 
 
-        }
+		}
 
 
 	</script>
@@ -83,13 +83,13 @@
 	<script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
-
+	
 	<!--UP button-->
 	<div class="up_button" onclick="javascript: window.scroll(0, 0);">
 		UP
 	</div>
 	<!-- MAIN DIV -->
-	<div class="navpage" id="navpage">
+	<div class="navpage" id="navpage" style="height:4475px;">
 
 		<!-- NAVIGATION BAR -->
 		<div class="navmainmenud">
@@ -98,40 +98,44 @@
 			<ul class="navmainmenu">
 				<!--<li><a href=""><img height="50px" width="200px" src="Image/menu_arr_blue_tr.png" /></a></li>-->
 				<li style="width:200px;"><a href="index.html"><h2>ACCUEIL</h2></a></li>
-				<li style="width:200px;"><a href="" onmouseover="show('idsubmenu_main_ulp2');"><h2>NEWS</h2></a>
-				
+				<li style="width:200px;">
+					<a href="" onmouseover="show('idsubmenu_main_ulp2');"><h2>NEWS</h2></a>
+
 					<ul class="submenu_main_ulp2" id="idsubmenu_main_ulp2">
-						<li class="submenu_main_lip2" ><a href="index.html#coding_stats">Coding stats</a></li>
-						<li class="submenu_main_lip2" ><a href="index.html#activity_stats">Activity stats</a></li>
-						<li class="submenu_main_lip2" ><a href="index.html#experienceskills">Experience</a></li>
-						<li class="submenu_main_lip2" ><a href="index.html#portfolio">Portfolio</a></li>
-						<li class="submenu_main_lip2" ><a href="index.html#experience">Job</a></li>
-						<li class="submenu_main_lip2" ><a href="index.html#formation">Formation</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#coding_stats">Coding stats</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#activity_stats">Activity stats</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#experienceskills">Experience</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#portfolio">Portfolio</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#experience">Job</a></li>
+						<li class="submenu_main_lip2"><a href="index.html#formation">Formation</a></li>
 
 					</ul>
-				
+
 				</li>
-				<li style="width:200px;"><a href="info.html" onmouseover="show('idsubmenu_main_ulp4');"><h2>INFO</h2></a>
+				<li style="width:200px;">
+					<a href="info.html" onmouseover="show('idsubmenu_main_ulp4');"><h2>INFO</h2></a>
 					<ul class="submenu_main_ulp4" id="idsubmenu_main_ulp4">
-						<li class="submenu_main_lip4" ><a href="info.html">My Setup</a></li>
-													
+						<li class="submenu_main_lip4"><a href="info.html">My Setup</a></li>
+
 					</ul>
 
-				
-				
+
+
 				</li>
-				<li style="width:200px;"><a href="" onmouseover="show('idsubmenu_main_ulp3');"><h2>TUTORIAL</h2></a>
+				<li style="width:200px;">
+					<a href="" onmouseover="show('idsubmenu_main_ulp3');"><h2>TUTORIAL</h2></a>
 					<ul class="submenu_main_ulp3" id="idsubmenu_main_ulp3">
-						<li class="submenu_main_lip3" ><a href="c.html">The Langage C</a></li>
-						<li class="submenu_main_lip3" ><a href="cpp.html">Data structure in C++</a></li>
+						<li class="submenu_main_lip3"><a href="c.html">The Langage C</a></li>
+						<li class="submenu_main_lip3"><a href="cpp.html">Data structure in C++</a></li>
 						<li class="submenu_main_lip3"><a href="nn.html">Convolutional Neural Network</a></li>
 					</ul>
-				
-				
+
+
 				</li>
-				<li style="width:150px;"><a href="gallery.html"><h2>GALLERY</h2></a>
-					
-				
+				<li style="width:150px;">
+					<a href="gallery.html"><h2>GALLERY</h2></a>
+
+
 				</li>
 				<li style="width:150px;"><a href="about.html"><h2>ABOUT </h2></a></li>
 				<li style="width:20px;"><a href="settings.html" style="padding: 20px 5px;"><img src="Image/settings2.png" alt="settings" width="25" height="25" /></a></li>
@@ -143,7 +147,8 @@
 		<div class="navcontent">
 
 			<!-- LEFT -->
-			<div class="navleft" id="idnavleft">
+			<div class="navleft" id="idnavleft" style="height:4400px;">
+				<div class="innavleft">
 				<div class="menu_princ_element">
 					<h2><a href="#navpage">WELCOME</a></h2>
 				</div>
@@ -158,10 +163,12 @@
 					<h3><a href="#formation">Formation</a></h3>
 
 				</div>
+				</div>
 			</div>
 
 			<!-- CENTER -->
-			<div class="navcenter" id="idnavcenter">
+			<div class="navcenter" id="idnavcenter" style="height:4400px;">
+				
 				<p>
 					<img id="imghead" style="margin: 20px 20px;float: left;" src="Image/head2.png" width="150" height="200" />
 					<h2> Hey, I am Régis Meyssonnier !!!</h2>
@@ -169,10 +176,11 @@
 					C++ Developer - C - Python - PHP - Assembly - Web development
 				</p>
 				<p style="text-align: justify; text-indent: 10px;margin-right:10px; ">
-					I am a young guy who live in France. I 'm looking for a full remote job. I  would like to work in Software Engineering. I know many technology who are a good base to work in the industry. I am looking for the type of opportunities where I am skilled but I am opened to all the jobs. 
-					I am sure that many opportunities can match my profile. I am very fast and very serious. Try to contact me at my email address, or by linkedin. 
+					I am a young guy who live in France. I 'm looking for a full remote job. I  would like to work in Software Engineering. I know many technology who are a good base to work in the industry. I am looking for the type of opportunities where I am skilled but I am opened to all the jobs.
+					I am sure that many opportunities can match my profile. I am very fast and very serious. Try to contact me at my email address, or by linkedin.
 					<br /><br />
 					contact: regis.meyssonnier@gmail.com
+					<br />
 
 				</p>
 
@@ -222,7 +230,7 @@
 
 	</div>
 
-	
+
 
 	<script>
 
@@ -247,7 +255,6 @@
 	</script>
 
 	<audio src="Son/son.mp3" autoplay loop>
-		
 	</audio>
 
 </body>
