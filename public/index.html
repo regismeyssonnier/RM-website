@@ -8,9 +8,15 @@
 	<meta name="author" content="Regis Meyssonnier">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main.css">
-
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	<!--
+	  manifest.json provides metadata used when your web app is installed on a
+	  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+	-->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 </head>
 <body onclick="hide();">
+	<div id="root"></div>
 	<script>
 		/*function show(tt) {
 			var tag = document.getElementsByTagName(tt)[0];
@@ -87,7 +93,7 @@
 	<script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
 	<script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
-	
+
 	<!--UP button-->
 	<div class="up_button" onclick="javascript: window.scroll(0, 0);">
 		UP
@@ -153,20 +159,20 @@
 			<!-- LEFT -->
 			<div class="navleft" id="idnavleft" style="height:5000px;">
 				<div class="innavleft">
-				<div class="menu_princ_element">
-					<h2><a href="#navpage">WELCOME</a></h2>
-				</div>
-				<br /><br />
+					<div class="menu_princ_element">
+						<h2><a href="#navpage">WELCOME</a></h2>
+					</div>
+					<br /><br />
 
-				<div style="text-align:center;">
-					<h3><a href="#coding_stats">Coding stats</a></h3>
-					<h3><a href="#activity_stats">Activity stats</a></h3>
-					<h3><a href="#experienceskills">Experience</a></h3>
-					<h3><a href="#portfolio">Portfolio</a></h3>
-					<h3><a href="#experience">Job</a></h3>
-					<h3><a href="#formation">Formation</a></h3>
+					<div style="text-align:center;">
+						<h3><a href="#coding_stats">Coding stats</a></h3>
+						<h3><a href="#activity_stats">Activity stats</a></h3>
+						<h3><a href="#experienceskills">Experience</a></h3>
+						<h3><a href="#portfolio">Portfolio</a></h3>
+						<h3><a href="#experience">Job</a></h3>
+						<h3><a href="#formation">Formation</a></h3>
 
-				</div>
+					</div>
 				</div>
 			</div>
 
@@ -263,8 +269,7 @@
 
 	</script>
 
-	<audio src="Son/son.mp3" autoplay loop>
-	</audio>
+	
 
 </body>
 </html>

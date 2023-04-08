@@ -8,9 +8,15 @@
 	<meta name="author" content="Regis Meyssonnier">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main.css">
-
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	<!--
+	  manifest.json provides metadata used when your web app is installed on a
+	  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+	-->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 </head>
 <body onclick="hide();">
+	<div id="root"></div>
 	<script>
 		/*function show(tt) {
 			var tag = document.getElementsByTagName(tt)[0];
@@ -44,37 +50,37 @@
 
 		}*/
 
-        function show(tt) {
-            var tag = document.getElementById(tt);
+		function show(tt) {
+			var tag = document.getElementById(tt);
 
-            tag.style.display = 'block';
-            //tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+			tag.style.display = 'block';
+			//tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
 
-            var t = 0, p = '';
-            for (var i = 2; i < 5; i++) {
-                p = 'idsubmenu_main_ulp' + i;
-                if (p != tt) {
-                    t = document.getElementById(p);
-                    t.style.display = 'none';
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'idsubmenu_main_ulp' + i;
+				if (p != tt) {
+					t = document.getElementById(p);
+					t.style.display = 'none';
 
-                }
+				}
 
-            }
+			}
 
-        }
-        function hide() {
-            var t = 0, p = '';
-            for (var i = 2; i < 5; i++) {
-                p = 'idsubmenu_main_ulp' + i;
-                //if(p != tt){
-                t = document.getElementById(p);
-                t.style.display = 'none';
-                //}
+		}
+		function hide() {
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'idsubmenu_main_ulp' + i;
+				//if(p != tt){
+				t = document.getElementById(p);
+				t.style.display = 'none';
+				//}
 
-            }
+			}
 
 
-        }
+		}
 
 
 	</script>
@@ -143,27 +149,27 @@
 		</div>
 
 		<!-- CONTENT -->
-		<div class="navcontent" >
+		<div class="navcontent">
 
 			<!-- LEFT -->
 			<div class="navleft" id="idnavleft" style="height:6000px;">
 				<div class="innavleft">
-				<div class="menu_princ_element">
-					<h2><a href="#langage_c">Langage C++</a></h2>
-				</div>
-				<br /><br />
+					<div class="menu_princ_element">
+						<h2><a href="#langage_c">Langage C++</a></h2>
+					</div>
+					<br /><br />
 
-				<div style="text-align:center;">
-					<h3><a href="#data">Data structure</a></h3>
-					<h3><a href="#vector">Vector</a></h3>
-					<h3><a href="#queue">Queue</a></h3>
-					<h3><a href="#deque">Deque</a></h3>
-					<h3><a href="#pqueue">Priority_queue</a></h3>
-					<h3><a href="#set">Set</a></h3>
-					<h3><a href="#stack">Stack</a></h3>
-					<h3><a href="#map">Map</a></h3>
-					<h3><a href="#odatas">Other Data structure</a></h3>
-				</div>
+					<div style="text-align:center;">
+						<h3><a href="#data">Data structure</a></h3>
+						<h3><a href="#vector">Vector</a></h3>
+						<h3><a href="#queue">Queue</a></h3>
+						<h3><a href="#deque">Deque</a></h3>
+						<h3><a href="#pqueue">Priority_queue</a></h3>
+						<h3><a href="#set">Set</a></h3>
+						<h3><a href="#stack">Stack</a></h3>
+						<h3><a href="#map">Map</a></h3>
+						<h3><a href="#odatas">Other Data structure</a></h3>
+					</div>
 				</div>
 			</div>
 
@@ -407,31 +413,30 @@
 				</p>
 
 			</div>
-	</div>
+		</div>
 
 
 
-	<script>
-		Save_Custom();
-		var custom = localStorage.getItem('custom');
-		console.log('custom ' + custom);
-		if (!custom) {
-			custom = sessionStorage.getItem('custom');
-			if (!custom) custom = "false";
-		}
+		<script>
+			Save_Custom();
+			var custom = localStorage.getItem('custom');
+			console.log('custom ' + custom);
+			if (!custom) {
+				custom = sessionStorage.getItem('custom');
+				if (!custom) custom = "false";
+			}
 
-		if (custom == "false") {
-			Save_Theme();
-			Load_Theme();
-		}
-		else {
-			Save_Custom_Theme();
-			Load_Custom_Theme();
-		}
+			if (custom == "false") {
+				Save_Theme();
+				Load_Theme();
+			}
+			else {
+				Save_Custom_Theme();
+				Load_Custom_Theme();
+			}
 
 
-	</script>
-	<audio src="Son/son.mp3" autoplay loop>
-	</audio>
+		</script>
+		
 </body>
 </html>
