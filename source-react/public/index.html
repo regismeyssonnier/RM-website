@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>regismeyssonnier</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Regis Meyssonnier job">
+	<meta name="keywords" content="Regis Meyssonnier, Régis Meyssonnier, regismeyssonnier, Régis, jobs, news, resume">
+	<meta name="author" content="Regis Meyssonnier">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	<!--
+	  manifest.json provides metadata used when your web app is installed on a
+	  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+	-->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+</head>
+<body onclick="hide();">
+
+	<script>
+		/*function show(tt) {
+			var tag = document.getElementsByTagName(tt)[0];
+
+			tag.style.display = 'inline';
+			tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'pad' + i;
+				if (p != tt) {
+					t = document.getElementsByTagName(p)[0];
+					t.style.display = 'none';
+
+				}
+
+			}
+
+		}
+		function hide() {
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'pad' + i;
+				//if(p != tt){
+				t = document.getElementsByTagName(p)[0];
+				t.style.display = 'none';
+				//}
+
+			}
+
+
+		}*/
+
+		function show(tt) {
+			var tag = document.getElementById(tt);
+
+			tag.style.display = 'block';
+			//tag.style.left = ((window.innerWidth / 2) - 125) + 'px';
+
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'idsubmenu_main_ulp' + i;
+				if (p != tt) {
+					t = document.getElementById(p);
+					t.style.display = 'none';
+
+				}
+
+			}
+
+		}
+		function hide() {
+			var t = 0, p = '';
+			for (var i = 2; i < 5; i++) {
+				p = 'idsubmenu_main_ulp' + i;
+				//if(p != tt){
+				t = document.getElementById(p);
+				t.style.display = 'none';
+				//}
+
+			}
+
+
+		}
+
+
+	</script>
+
+	<noscript>Vous devez activer Javascript sur votre navigateur pour activer les fonctionnalit�s du site web</noscript>
+	<script src="main.js"></script>
+	<script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
+
+	<div id="rootmain"></div>
+
+	<div id="root2"></div>
+
+	<script>
+
+		Save_Custom();
+		var custom = localStorage.getItem('custom');
+		console.log('custom ' + custom);
+		if (!custom) {
+			custom = sessionStorage.getItem('custom');
+			if (!custom) custom = "false";
+		}
+
+		if (custom == "false") {
+			Save_Theme();
+			Load_Theme();
+		}
+		else {
+			Save_Custom_Theme();
+			Load_Custom_Theme();
+		}
+
+
+	</script>
+
+
+
+</body>
+</html>
